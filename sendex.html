@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<title>Services (My Way Website)</title>
+</head>
+
+<style>
+	body {
+		background-color: black;
+	}
+	.navbar-header {
+		font-size: 40px;
+		padding-left: 70px;
+	}
+	.navbar-header a {
+		color: white;
+		text-decoration: none;
+	}
+	.menu a {
+		color: white;
+	}
+	.menu a:hover {
+		color: black;
+	}
+	.jumbotron {
+		background-image: url("https://s3.eu-central-1.amazonaws.com/centaur-wp/homebuilding/prod/content/uploads/2014/06/Creating-Home-Office-Barbara-Genda.jpg");
+		height: 500px;
+		width: 100%;
+	}
+	.jumbotron .text1 {
+		color: white;
+		text-transform: uppercase;
+		text-align: center;
+		font-weight: bold;
+		padding-top: 70px;
+	}
+	.text1 {
+		color: white;
+	}
+	h3 {
+		color:white;
+		text-align: center;
+		padding-top: 15px;
+		padding-bottom: 10px;
+	}
+	p {
+		color: white;
+		text-align: center;
+		padding-top: 15px;
+		padding-bottom: 10px;
+	}
+	img {
+		height: 200px;
+		padding-left: 110px;
+		margin-top: 40px;
+		background-color: black;
+	}
+	.filler {
+		color: grey;
+	}
+</style>
+
+<body>
+	<div class="row">
+		<div style="background-color: black">
+			<div class="container-fluid">
+				<div class= "col-lg-7 col-md-7 col-sm-12 col-xs-12">
+					<div class="navbar-header"><a href="#">My Way</a></div>
+				</div>
+				<div class= "col-lg-5 col-md-5 col-sm-12 col-xs-12">
+					<ul class="nav navbar-nav">
+						<li class="menu"><a href="#">Home</a><li>
+						<li class="menu"><a href="#">Services</a><li>
+						<li class="menu"><a href="#">Works</a><li>
+						<li class="menu"><a href="#">Gallery</a><li>
+						<li class="menu"><a href="#">Team</a><li>
+						<li class="menu"><a href="#">Contact</a><li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	
+	<div class="jumbotron">
+		<h1 class="text1">Services</h1>
+		<p>How awesome can it be?</p>
+	</div>
+	
+	<div class="content">
+		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+			<img src="http://www.iconsdb.com/icons/preview/soylent-red/settings-5-xxl.png" alt="settings logo">
+			<h3>Built With Bootstrap</h3>
+			<p class="filler">HTML5 AND CSS VALID CODE</p>
+			<p>Est no minim nobis. Sea no tation qualisque adipiscing. Sed id semper senserit, ne vim regione legimus corrumpit, ad cum vituperata inciderint. Ius oratio mentitum ad. Sumo ponderum incorrupte eam an, vis cu primis aliquid necessitatibus.</p>
+		</div>
+		
+		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+			<img src="http://www.iconsdb.com/icons/preview/red/eye-3-xxl.png" alt="eye logo">
+			<h3>Retina Ready</h3>
+			<p class="filler">ULTRA SHARP SERVICES</p>
+			<p>Est no minim nobis. Sea no tation qualisque adipiscing. Sed id semper senserit, ne vim regione legimus corrumpit, ad cum vituperata inciderint. Ius oratio mentitum ad. Sumo ponderum incorrupte eam an, vis cu primis aliquid necessitatibus.</p>
+		</div>
+		
+		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+			<img src="http://www.clker.com/cliparts/e/8/T/h/0/V/stethoscope-red-hi.png" alt="stethescope logo">
+			<h3>Support</h3>
+			<p class="filler">ITS FREE AND ALWAYS WILL BE</p>
+			<p>Est no minim nobis. Sea no tation qualisque adipiscing. Sed id semper senserit, ne vim regione legimus corrumpit, ad cum vituperata inciderint. Ius oratio mentitum ad. Sumo ponderum incorrupte eam an, vis cu primis aliquid necessitatibus.</p>
+		</div>
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script>
+		$(function() {
+			$("p").on("click",function(){
+				$(this).next().toggle();
+			});
+			$("li").on("click",function(){
+				$(this).next().hide();
+			});
+		});
+	</script>
+</body>
+</html>
